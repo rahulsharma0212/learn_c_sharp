@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 
 namespace MyFirstProgram
 {
@@ -256,6 +257,337 @@ namespace MyFirstProgram
             //     }
             //     Console.WriteLine();
             // }
+
+            /******************
+            TOPIC (18) number guessing game
+            *******************/
+            // Random random = new Random();
+            // bool playAgain = true;
+            // int min = 1, max = 100, guess, number, guesses;
+            // string response;
+
+            // while (playAgain)
+            // {
+            //     guess = 0;
+            //     guesses = 0;
+            //     response = "";
+            //     number = random.Next(min, max + 1);
+            //     while (number != guess)
+            //     {
+            //         Console.WriteLine("Guess a number between " + min + " and " + max);
+            //         guess = Convert.ToInt32(Console.ReadLine());
+            //         Console.WriteLine("Guess :: " + guess);
+            //         if (guess < number)
+            //         {
+            //             Console.WriteLine(guess + " is too low!");
+            //         }
+            //         else if (guess > number)
+            //         {
+            //             Console.WriteLine(guess + " is too high!");
+            //         }
+            //         guesses++;
+            //     }
+            //     Console.WriteLine("Number :: " + number);
+            //     Console.WriteLine("YOU WIN !!");
+            //     Console.WriteLine("Guesses :: " + guesses);
+
+            //     Console.WriteLine("Would you like to play again (Y/N)");
+            //     response = Console.ReadLine()!.ToUpper();
+            //     if (response == "Y")
+            //     {
+            //         playAgain = true;
+            //     }
+            //     else
+            //     {
+            //         playAgain = false;
+            //     }
+            // }
+            // Console.WriteLine("Thanks for playing! ... I guess");
+
+            /******************
+            TOPIC (19) rock paper scissor game
+            *******************/
+            // Random random = new Random();
+            // bool playAgain = true;
+            // string player, computer, response;
+            // while (playAgain)
+            // {
+            //     player = "";
+            //     computer = "";
+            //     response = "";
+            //     while (player != "ROCK" && player != "PAPER" && player != "SCISSORS")
+            //     {
+            //         Console.Write("Enter ROCK, PAPER, or SCISSORS :: ");
+            //         player = Console.ReadLine()!.ToUpper();
+            //     }
+            //     switch (random.Next(1, 4))
+            //     {
+            //         case 1:
+            //             computer = "ROCK";
+            //             break;
+            //         case 2:
+            //             computer = "PAPER";
+            //             break;
+            //         case 3:
+            //             computer = "SCISSORS";
+            //             break;
+            //     }
+            //     Console.WriteLine("Player :: " + player);
+            //     Console.WriteLine("Computer :: " + computer);
+            //     switch (player)
+            //     {
+            //         case "ROCK":
+            //             if (computer == "ROCK")
+            //             {
+            //                 Console.WriteLine("It's a draw!");
+            //             }
+            //             else if (computer == "PAPER")
+            //             {
+            //                 Console.WriteLine("You lose!");
+            //             }
+            //             else
+            //             {
+            //                 Console.WriteLine("You win!");
+            //             }
+            //             break;
+            //         case "PAPER":
+            //             if (computer == "PAPER")
+            //             {
+            //                 Console.WriteLine("It's a draw!");
+            //             }
+            //             else if (computer == "SCISSORS")
+            //             {
+            //                 Console.WriteLine("You lose!");
+            //             }
+            //             else
+            //             {
+            //                 Console.WriteLine("You win!");
+            //             }
+            //             break;
+            //         case "SCISSORS":
+            //             if (computer == "SCISSORS")
+            //             {
+            //                 Console.WriteLine("It's a draw!");
+            //             }
+            //             else if (computer == "ROCK")
+            //             {
+            //                 Console.WriteLine("You lose!");
+            //             }
+            //             else
+            //             {
+            //                 Console.WriteLine("You win!");
+            //             }
+            //             break;
+            //     }
+            //     Console.WriteLine("Would you like to play again (Y/N)");
+            //     response = Console.ReadLine()!.ToUpper();
+            //     if (response == "Y")
+            //     {
+            //         playAgain = true;
+            //     }
+            //     else
+            //     {
+            //         playAgain = false;
+            //     }
+            // }
+            // Console.WriteLine("Thanks for playing! ... I guess");
+
+            /******************
+            TOPIC (20) calculator game
+            *******************/
+            // Console.WriteLine("----------------------");
+            // Console.WriteLine("calculator program");
+            // Console.WriteLine("----------------------");
+
+            // do
+            // {
+            //     Console.Write("Enter number 1 :: ");
+            //     double num1 = Convert.ToDouble(Console.ReadLine());
+            //     Console.Write("Enter number 2 :: ");
+            //     double num2 = Convert.ToDouble(Console.ReadLine());
+
+            //     Console.WriteLine("Enter an option :: ");
+            //     Console.WriteLine("\t+ (Add)");
+            //     Console.WriteLine("\t- (Subtract)");
+            //     Console.WriteLine("\t* (multiply)");
+            //     Console.WriteLine("\t/ (divide)");
+
+            //     switch (Console.ReadLine())
+            //     {
+            //         case "+":
+            //             Console.WriteLine($"Your result : {num1} + {num2} = {num1 + num2}");
+            //             break;
+            //         case "-":
+            //             Console.WriteLine($"Your result : {num1} - {num2} = {num1 - num2}");
+            //             break;
+            //         case "*":
+            //             Console.WriteLine($"Your result : {num1} * {num2} = {num1 * num2}");
+            //             break;
+            //         case "/":
+            //             Console.WriteLine($"Your result : {num1} / {num2} = {num1 / num2}");
+            //             break;
+            //         default:
+            //             Console.WriteLine("Invalid option");
+            //             break;
+            //     }
+            //     Console.WriteLine("Do you want to continue to use ? (Y/N)");
+            // } while (Console.ReadLine()!.ToUpper() == "Y");
+
+            /******************
+            TOPIC (21) Arrays
+            *******************/
+            // string[] cars = { "BMW", "AUDI", "MUSTANG" };
+            // string[] cars_2 = new string[3];
+            // cars_2[0] = "BMW";
+            // cars_2[1] = "TESLA";
+            // cars_2[2] = "MERCEDES";
+            // int lengthOfArray = cars.Length;
+            // Console.WriteLine($"cars[] type => {cars.GetType()}");
+            // Console.WriteLine("lengthOfArray :: " + lengthOfArray);
+            // cars[1] = "HONDA";
+            // for (int i = 0; i < lengthOfArray; i++)
+            // {
+            //     Console.WriteLine($"cars :: index -> {i} value -> {cars[i]}");
+            // }
+            // for (int i = 0; i < cars_2.Length; i++)
+            // {
+            //     Console.WriteLine($"cars_2[{i}] = {cars[i]}");
+            // }
+
+            /******************
+            TOPIC (22) foreach loop
+            *******************/
+            // string[] cars = { "BMW", "AUDI", "MUSTANG" };
+            // foreach (string car in cars)
+            // {
+            //     Console.WriteLine(car);
+            // }
+
+            /******************
+            TOPIC (23) methods
+            *******************/
+            // string name = "Vikal";
+            // int age = 24;
+            // singHappyBirthday(name, age);
+
+            /******************
+            TOPIC (24) return Keyword
+            *******************/
+            // double num1 = 2, num2 = 4;
+            // double res = Multiply(num1, num2);
+            // Console.WriteLine(res);
+
+            /******************
+            TOPIC (25) method overloading
+            *******************/
+            // double num1 = 2, num2 = 4, num3 = 8;
+            // double res = Multiply(num1, num2, num3);
+            // Console.WriteLine(res);
+
+            /******************
+            TOPIC (26) params keyword
+            *******************/
+            // double total = checkout(2, 8, 1, 1, 56, 65);
+            // Console.WriteLine("total price :: " + total);
+
+            /******************
+            TOPIC (27) exception handling
+            *******************/
+            // int x, y;
+            // double result;
+            // try
+            // {
+            //     Console.WriteLine("Enter first number :: ");
+            //     x = Convert.ToInt32(Console.ReadLine());
+
+            //     Console.WriteLine("Enter second number :: ");
+            //     y = Convert.ToInt32(Console.ReadLine());
+
+            //     result = x / y;
+            //     Console.WriteLine("result :: " + result);
+            // }
+            // catch (FormatException e)
+            // {
+            //     Console.WriteLine("Enter only numbers PLEASE!");
+            // }
+            // catch (DivideByZeroException e)
+            // {
+            //     Console.WriteLine("You can't divide by zero!");
+            // }
+            // catch (Exception e)
+            // {
+            //     Console.WriteLine("Something went wrong!");
+            // }
+            // finally
+            // {
+            //     Console.WriteLine("Thanks For Visiting");
+            // }
+
+            /******************
+            TOPIC (28) conditional operators
+            *******************/
+            // double temprature = 20;
+            // string message;
+            // message = (temprature > 15) ? "It's Warm outside" : "It's cold outside";
+            // Console.WriteLine(message);
+
+            /******************
+            TOPIC (29) string Interpolation
+            *******************/
+            // string firstName = "Rahul";
+            // string lastName = "Sharma";
+            // int age = 24;
+            // Console.WriteLine($"My name is {firstName} {lastName} and I am {age,10} years old"); // number represents space in front of the string
+            // Console.WriteLine($"My name is {firstName} {lastName} and I am {age,-10} years old");
+
+            /******************
+            TOPIC (30) multidimensional arrays
+            *******************/
+            // string[,] parkingLot = {
+            //     {"Mustang","F-150","Tesla"},
+            //     {"GTR","Mustang","F-150"},
+            //     {"Audi","Tesla","F-150"}
+            // };
+            // // foreach (string cars in parkingLot)
+            // // {
+            // //     Console.WriteLine(cars);
+            // // }
+            // for (int i = 0; i < parkingLot.GetLength(0); i++)
+            // {
+            //     for (int j = 0; j < parkingLot.GetLength(1); j++)
+            //     {
+            //         Console.Write($"parkingLot[{i}, {j}] = {parkingLot[i, j]} ");
+            //     }
+            //     Console.WriteLine();
+            // }
+        }
+
+        static void singHappyBirthday(string birthdayBoy, int yearsOld)
+        {
+            Console.WriteLine("Happy Birthday to you!");
+            Console.WriteLine("Happy Birthday to you!");
+            Console.WriteLine("Happy Birthday dear " + birthdayBoy);
+            Console.WriteLine("You are " + yearsOld + " years old");
+            Console.WriteLine("Happy Birthday to you!");
+            Console.WriteLine();
+        }
+
+        static double Multiply(double x, double y)
+        {
+            return x * y;
+        }
+        static double Multiply(double x, double y, double z)
+        {
+            return x * y * z;
+        }
+        static double checkout(params double[] prices)
+        {
+            double total = 0;
+            foreach (double price in prices)
+            {
+                total += price;
+            }
+            return total;
         }
     }
 }
