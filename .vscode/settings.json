@@ -2,6 +2,16 @@
     "dotnet.defaultSolution": "MyFirstProgram.sln",
     "prettier.tabWidth": 4,
     "editor.formatOnSave": true,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]",
+        "TOPIC"
+    ],
     "code-runner.executorMap": {
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
